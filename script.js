@@ -32,10 +32,14 @@ const companies = [
   },
   {
     id: 'wiseplanet', name: '와이즈플래닛컴퍼니', type: '일반', subscription: ['2026-09-14', '2026-09-15'], listing: null,
-    price: '미정', priceBand: '10,000~12,000원', broker: '대신증권', refund: '미정',
+    price: '미정', priceBand: '10,000~12,000원', broker: '대신증권', refund: '2026.09.17',
+    offering: '1,600,000주 · 신주모집 100%',
     summary: '상품과 브랜드를 직접 기획하고 마케팅·유통·고객관리까지 수행하는 브랜드 빌더입니다.',
     demand: { status: 'pending', text: '기관 수요예측 예정(9.04~9.10) · 결과 발표 전' },
-    sources: [['9월 공모 일정', 'https://www.38.co.kr/html/fund/?o=k'], ['기업·일정 소개', 'https://www.kokstock.com/stock/ipo.asp']]
+    sources: [
+      ['DART 정정 증권신고서', 'https://dart.fss.or.kr/'],
+      ['최신 공모 일정·공모구조', 'https://www.38.co.kr/html/fund/?no=2311&o=v']
+    ]
   },
   {
     id: 'bigwave-robotics', name: '빅웨이브로보틱스', type: '일반', subscription: ['2026-09-15', '2026-09-16'], listing: null,
@@ -156,6 +160,7 @@ function openDrawer(company) {
       <div class="detail-item"><dt>확정 공모가</dt><dd>${company.price}</dd></div>
       <div class="detail-item"><dt>주관사</dt><dd>${company.broker}</dd></div>
       <div class="detail-item"><dt>환불일</dt><dd>${company.refund}</dd></div>
+      ${company.offering ? `<div class="detail-item"><dt>공모주식</dt><dd>${company.offering}</dd></div>` : ''}
     </dl>
     <div class="result-card ${company.demand.status}">
       <h3>기관 수요예측</h3>
