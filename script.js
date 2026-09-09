@@ -11,24 +11,33 @@ const companies = [
   },
   {
     id: 'neosapiens', name: '네오사피엔스', type: '일반', subscription: ['2026-09-10', '2026-09-11'], listing: null,
-    price: '미정', priceBand: '13,800~15,800원', broker: '대신증권', refund: '2026.09.15',
+    price: '10,000원', priceBand: '13,800~15,800원', broker: '대신증권', refund: '2026.09.15',
     summary: '생성형 AI 음성 솔루션 플랫폼 타입캐스트를 운영하는 AI 미디어 기술 기업입니다.',
-    demand: { status: 'pending', text: '기관 수요예측 진행 중 · 결과 발표 전' },
-    sources: [['9월 공모 일정', 'https://www.38.co.kr/html/fund/?o=k'], ['기업·일정 소개', 'https://www.kokstock.com/stock/ipo.asp']]
+    demand: { status: 'done', text: '기관 경쟁률 219.56 : 1 · 의무보유확약 8.98% · 확정 공모가 10,000원' },
+    sources: [
+      ['DART 발행조건 확정 공시', 'https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000317'],
+      ['9월 공모 일정', 'https://www.38.co.kr/html/fund/?o=k']
+    ]
   },
   {
     id: 'korea-spac-17', name: '한국스팩17호', type: '스팩', subscription: ['2026-09-10', '2026-09-11'], listing: null,
-    price: '미정', priceBand: '2,000원', broker: '한국투자증권', refund: '2026.09.15',
+    price: '2,000원', priceBand: '2,000원', broker: '한국투자증권', refund: '2026.09.15',
     summary: '기업 인수·합병을 목적으로 설립된 기업인수목적회사(SPAC)입니다.',
-    demand: { status: 'pending', text: '기관 수요예측 결과 발표 전' },
-    sources: [['9월 공모 일정', 'https://www.38.co.kr/html/fund/?o=k']]
+    demand: { status: 'done', text: '기관 경쟁률 1,270.51 : 1 · 의무보유확약 0.00007% · 확정 공모가 2,000원' },
+    sources: [
+      ['DART 발행조건 확정 공시', 'https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000285'],
+      ['9월 공모 일정', 'https://www.38.co.kr/html/fund/?o=k']
+    ]
   },
   {
     id: 'kb-spac-34', name: 'KB스팩34호', type: '스팩', subscription: ['2026-09-10', '2026-09-11'], listing: null,
-    price: '미정', priceBand: '2,000원', broker: 'KB증권', refund: '2026.09.15',
+    price: '2,000원', priceBand: '2,000원', broker: 'KB증권', refund: '2026.09.15',
     summary: '기업 인수·합병을 목적으로 설립된 기업인수목적회사(SPAC)입니다.',
-    demand: { status: 'pending', text: '기관 수요예측 예정(9.04~9.07) · 결과 발표 전' },
-    sources: [['KB스팩34호 상세 일정', 'https://www.38.co.kr/html/fund/?no=2313&o=v']]
+    demand: { status: 'done', text: '기관 경쟁률 1,232.51 : 1 · 의무보유확약 약 0.008% · 확정 공모가 2,000원' },
+    sources: [
+      ['발행조건 확정 공시 기반 수요예측 결과', 'https://www.datatooza.com/article/20260908143119906052ef3ed51f_80'],
+      ['KB스팩34호 상세 일정', 'https://www.38.co.kr/html/fund/?no=2313&o=v']
+    ]
   },
   {
     id: 'wiseplanet', name: '와이즈플래닛컴퍼니', type: '일반', subscription: ['2026-09-14', '2026-09-15'], listing: null,
