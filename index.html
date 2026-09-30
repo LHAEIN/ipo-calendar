@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2026년 9월 공모주 청약과 상장 일정을 한눈에 확인하는 캘린더" />
+  <title>IPO Calendar · 2026년 9월</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">IPO CALENDAR</p>
+        <h1>2026년 9월 공모주</h1>
+      </div>
+      <p class="updated">2026.09.03 기준</p>
+    </header>
+
+    <section class="calendar-card" aria-labelledby="calendar-title">
+      <div class="calendar-head">
+        <h2 id="calendar-title">September <span>2026</span></h2>
+        <div class="legend" aria-label="일정 구분">
+          <span><i class="dot subscription"></i>청약</span>
+          <span><i class="dot listing"></i>상장</span>
+        </div>
+      </div>
+      <div class="weekdays" aria-hidden="true">
+        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+      </div>
+      <div id="calendar" class="calendar-grid" aria-label="2026년 9월 공모주 달력"></div>
+    </section>
+
+    <section class="company-section" aria-labelledby="company-title">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">SEPTEMBER IPO</p>
+          <h2 id="company-title">공모주 일정</h2>
+        </div>
+        <span id="company-count" class="count-badge"></span>
+      </div>
+      <div id="company-list" class="company-list"></div>
+    </section>
+
+    <footer>
+      <p>일정과 공모가는 변경될 수 있습니다. 투자 전 증권신고서와 주관사 공지를 다시 확인해 주세요.</p>
+    </footer>
+  </main>
+
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="detail-drawer" class="detail-drawer" aria-hidden="true" aria-labelledby="detail-title">
+    <button id="drawer-close" class="drawer-close" aria-label="상세정보 닫기">×</button>
+    <div id="drawer-content"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
