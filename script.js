@@ -79,6 +79,26 @@ const companies = [
     sources: [['수요예측 결과 발표', 'https://v.daum.net/v/20260916161746380'], ['공모·환불·상장 일정', 'https://www.38.co.kr/html/fund/?no=2307&o=v']]
   },
   {
+    id: 'melcon', name: '멜콘', type: '일반', subscription: ['2026-10-01', '2026-10-02'], listing: '2026-10-15',
+    price: '12,300원', priceBand: '10,700~12,300원', broker: '대신증권', refund: '2026.10.07',
+    summary: '반도체 포토공정 장비 내부의 온도·습도와 공기 청정도를 제어하는 초정밀 환경제어 시스템 기업입니다.',
+    demand: { status: 'done', text: '기관 경쟁률 1,136.84 : 1 · 의무보유확약 33.1% · 확정 공모가 12,300원' },
+    sources: [
+      ['수요예측 결과 및 상장 일정', 'https://www.newspim.com/news/view/20260929000787'],
+      ['수요예측 결과 교차 확인', 'https://www.newsis.com/view/NISX20260929_0003807125']
+    ]
+  },
+  {
+    id: 'jincostech', name: '진코스텍', type: '일반', subscription: ['2026-10-02', '2026-10-06'], listing: '2026-10-15',
+    price: '23,500원', priceBand: '19,500~23,500원', broker: '하나증권', refund: '2026.10.08',
+    summary: '하이드로겔 마스크팩·아이패치 등 기능성 화장품을 개발·생산하는 ODM·OEM 기업입니다.',
+    demand: { status: 'done', text: '기관 경쟁률 1,097.62 : 1 · 의무보유확약 5.29% · 확정 공모가 23,500원' },
+    sources: [
+      ['공모가·기관 경쟁률·상장 일정', 'https://www.yna.co.kr/view/AKR20260929039800008'],
+      ['DART 발행조건 확정 공시', 'https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000394']
+    ]
+  },
+  {
     id: 'elice', name: '엘리스그룹', type: '일반', subscription: ['2026-09-18', '2026-09-21'], listing: null,
     price: '미정', priceBand: '70,400~90,500원', broker: '미래에셋증권 · 삼성증권', refund: '미정',
     summary: 'AI 교육 플랫폼과 클라우드 인프라, 산업별 AX 솔루션을 제공하는 풀스택 AI 기업입니다.',
